@@ -222,6 +222,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "";
 			};
 			buildConfigurationList = 1F751BFB15695A0B0000E635 /* Build configuration list for PBXProject "MarsTime" */;
 			compatibilityVersion = "Xcode 3.2";
