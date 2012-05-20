@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F751C0615695A0B0000E635 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F751C0515695A0B0000E635 /* UIKit.framework */; };
+		1F751C0815695A0B0000E635 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F751C0715695A0B0000E635 /* Foundation.framework */; };
+		1F751C0A15695A0B0000E635 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F751C0915695A0B0000E635 /* CoreGraphics.framework */; };
+		1F751C1015695A0B0000E635 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F751C0E15695A0B0000E635 /* InfoPlist.strings */; };
+		1F751C1215695A0B0000E635 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F751C1115695A0B0000E635 /* main.m */; };
+		1F751C1615695A0B0000E635 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F751C1515695A0B0000E635 /* AppDelegate.m */; };
+		1F751C1915695A0B0000E635 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F751C1715695A0B0000E635 /* MainStoryboard_iPhone.storyboard */; };
+		1F751C1C15695A0B0000E635 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F751C1A15695A0B0000E635 /* MainStoryboard_iPad.storyboard */; };
+		1F751C1F15695A0B0000E635 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F751C1E15695A0B0000E635 /* FirstViewController.m */; };
+		1F751C2115695A0B0000E635 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F751C2015695A0B0000E635 /* first.png */; };
+		1F751C2315695A0B0000E635 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F751C2215695A0B0000E635 /* first@2x.png */; };
+		1F751C2615695A0B0000E635 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F751C2515695A0B0000E635 /* SecondViewController.m */; };
+		1F751C2815695A0B0000E635 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F751C2715695A0B0000E635 /* second.png */; };
+		1F751C2A15695A0B0000E635 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F751C2915695A0B0000E635 /* second@2x.png */; };
+		1F751C3215695A0B0000E635 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F751C3115695A0B0000E635 /* SenTestingKit.framework */; };
+		1F751C3315695A0B0000E635 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F751C0515695A0B0000E635 /* UIKit.framework */; };
+		1F751C3415695A0B0000E635 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F751C0715695A0B0000E635 /* Foundation.framework */; };
+		1F751C3C15695A0B0000E635 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F751C3A15695A0B0000E635 /* InfoPlist.strings */; };
+		1F751C3F15695A0B0000E635 /* MarsTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F751C3E15695A0B0000E635 /* MarsTimeTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F751C3515695A0B0000E635 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F751BF815695A0B0000E635 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F751C0015695A0B0000E635;
+			remoteInfo = MarsTime;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F751C0115695A0B0000E635 /* MarsTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarsTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F751C0515695A0B0000E635 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1F751C0715695A0B0000E635 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1F751C0915695A0B0000E635 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1F751C0D15695A0B0000E635 /* MarsTime-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MarsTime-Info.plist"; sourceTree = "<group>"; };
+		1F751C0F15695A0B0000E635 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1F751C1115695A0B0000E635 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1F751C1315695A0B0000E635 /* MarsTime-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MarsTime-Prefix.pch"; sourceTree = "<group>"; };
+		1F751C1415695A0B0000E635 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1F751C1515695A0B0000E635 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1F751C1815695A0B0000E635 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		1F751C1B15695A0B0000E635 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		1F751C1D15695A0B0000E635 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		1F751C1E15695A0B0000E635 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		1F751C2015695A0B0000E635 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		1F751C2215695A0B0000E635 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		1F751C2415695A0B0000E635 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		1F751C2515695A0B0000E635 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		1F751C2715695A0B0000E635 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		1F751C2915695A0B0000E635 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		1F751C3015695A0B0000E635 /* MarsTimeTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarsTimeTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F751C3115695A0B0000E635 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		1F751C3915695A0B0000E635 /* MarsTimeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MarsTimeTests-Info.plist"; sourceTree = "<group>"; };
+		1F751C3B15695A0B0000E635 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1F751C3D15695A0B0000E635 /* MarsTimeTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarsTimeTests.h; sourceTree = "<group>"; };
+		1F751C3E15695A0B0000E635 /* MarsTimeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarsTimeTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F751BFE15695A0B0000E635 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F751C0615695A0B0000E635 /* UIKit.framework in Frameworks */,
+				1F751C0815695A0B0000E635 /* Foundation.framework in Frameworks */,
+				1F751C0A15695A0B0000E635 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F751C2C15695A0B0000E635 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F751C3215695A0B0000E635 /* SenTestingKit.framework in Frameworks */,
+				1F751C3315695A0B0000E635 /* UIKit.framework in Frameworks */,
+				1F751C3415695A0B0000E635 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F751BF615695A0B0000E635 = {
+			isa = PBXGroup;
+			children = (
+				1F751C0B15695A0B0000E635 /* MarsTime */,
+				1F751C3715695A0B0000E635 /* MarsTimeTests */,
+				1F751C0415695A0B0000E635 /* Frameworks */,
+				1F751C0215695A0B0000E635 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F751C0215695A0B0000E635 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F751C0115695A0B0000E635 /* MarsTime.app */,
+				1F751C3015695A0B0000E635 /* MarsTimeTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F751C0415695A0B0000E635 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F751C0515695A0B0000E635 /* UIKit.framework */,
+				1F751C0715695A0B0000E635 /* Foundation.framework */,
+				1F751C0915695A0B0000E635 /* CoreGraphics.framework */,
+				1F751C3115695A0B0000E635 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F751C0B15695A0B0000E635 /* MarsTime */ = {
+			isa = PBXGroup;
+			children = (
+				1F751C1415695A0B0000E635 /* AppDelegate.h */,
+				1F751C1515695A0B0000E635 /* AppDelegate.m */,
+				1F751C1715695A0B0000E635 /* MainStoryboard_iPhone.storyboard */,
+				1F751C1A15695A0B0000E635 /* MainStoryboard_iPad.storyboard */,
+				1F751C1D15695A0B0000E635 /* FirstViewController.h */,
+				1F751C1E15695A0B0000E635 /* FirstViewController.m */,
+				1F751C2015695A0B0000E635 /* first.png */,
+				1F751C2215695A0B0000E635 /* first@2x.png */,
+				1F751C2415695A0B0000E635 /* SecondViewController.h */,
+				1F751C2515695A0B0000E635 /* SecondViewController.m */,
+				1F751C2715695A0B0000E635 /* second.png */,
+				1F751C2915695A0B0000E635 /* second@2x.png */,
+				1F751C0C15695A0B0000E635 /* Supporting Files */,
+			);
+			path = MarsTime;
+			sourceTree = "<group>";
+		};
+		1F751C0C15695A0B0000E635 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F751C0D15695A0B0000E635 /* MarsTime-Info.plist */,
+				1F751C0E15695A0B0000E635 /* InfoPlist.strings */,
+				1F751C1115695A0B0000E635 /* main.m */,
+				1F751C1315695A0B0000E635 /* MarsTime-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F751C3715695A0B0000E635 /* MarsTimeTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F751C3D15695A0B0000E635 /* MarsTimeTests.h */,
+				1F751C3E15695A0B0000E635 /* MarsTimeTests.m */,
+				1F751C3815695A0B0000E635 /* Supporting Files */,
+			);
+			path = MarsTimeTests;
+			sourceTree = "<group>";
+		};
+		1F751C3815695A0B0000E635 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F751C3915695A0B0000E635 /* MarsTimeTests-Info.plist */,
+				1F751C3A15695A0B0000E635 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F751C0015695A0B0000E635 /* MarsTime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F751C4215695A0B0000E635 /* Build configuration list for PBXNativeTarget "MarsTime" */;
+			buildPhases = (
+				1F751BFD15695A0B0000E635 /* Sources */,
+				1F751BFE15695A0B0000E635 /* Frameworks */,
+				1F751BFF15695A0B0000E635 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarsTime;
+			productName = MarsTime;
+			productReference = 1F751C0115695A0B0000E635 /* MarsTime.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F751C2F15695A0B0000E635 /* MarsTimeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F751C4515695A0B0000E635 /* Build configuration list for PBXNativeTarget "MarsTimeTests" */;
+			buildPhases = (
+				1F751C2B15695A0B0000E635 /* Sources */,
+				1F751C2C15695A0B0000E635 /* Frameworks */,
+				1F751C2D15695A0B0000E635 /* Resources */,
+				1F751C2E15695A0B0000E635 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F751C3615695A0B0000E635 /* PBXTargetDependency */,
+			);
+			name = MarsTimeTests;
+			productName = MarsTimeTests;
+			productReference = 1F751C3015695A0B0000E635 /* MarsTimeTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F751BF815695A0B0000E635 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 1F751BFB15695A0B0000E635 /* Build configuration list for PBXProject "MarsTime" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1F751BF615695A0B0000E635;
+			productRefGroup = 1F751C0215695A0B0000E635 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F751C0015695A0B0000E635 /* MarsTime */,
+				1F751C2F15695A0B0000E635 /* MarsTimeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F751BFF15695A0B0000E635 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F751C1015695A0B0000E635 /* InfoPlist.strings in Resources */,
+				1F751C1915695A0B0000E635 /* MainStoryboard_iPhone.storyboard in Resources */,
+				1F751C1C15695A0B0000E635 /* MainStoryboard_iPad.storyboard in Resources */,
+				1F751C2115695A0B0000E635 /* first.png in Resources */,
+				1F751C2315695A0B0000E635 /* first@2x.png in Resources */,
+				1F751C2815695A0B0000E635 /* second.png in Resources */,
+				1F751C2A15695A0B0000E635 /* second@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F751C2D15695A0B0000E635 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F751C3C15695A0B0000E635 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F751C2E15695A0B0000E635 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F751BFD15695A0B0000E635 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F751C1215695A0B0000E635 /* main.m in Sources */,
+				1F751C1615695A0B0000E635 /* AppDelegate.m in Sources */,
+				1F751C1F15695A0B0000E635 /* FirstViewController.m in Sources */,
+				1F751C2615695A0B0000E635 /* SecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F751C2B15695A0B0000E635 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F751C3F15695A0B0000E635 /* MarsTimeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F751C3615695A0B0000E635 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F751C0015695A0B0000E635 /* MarsTime */;
+			targetProxy = 1F751C3515695A0B0000E635 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1F751C0E15695A0B0000E635 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F751C0F15695A0B0000E635 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1F751C1715695A0B0000E635 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F751C1815695A0B0000E635 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		1F751C1A15695A0B0000E635 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F751C1B15695A0B0000E635 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		1F751C3A15695A0B0000E635 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F751C3B15695A0B0000E635 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F751C4015695A0B0000E635 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F751C4115695A0B0000E635 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F751C4315695A0B0000E635 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MarsTime/MarsTime-Prefix.pch";
+				INFOPLIST_FILE = "MarsTime/MarsTime-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1F751C4415695A0B0000E635 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MarsTime/MarsTime-Prefix.pch";
+				INFOPLIST_FILE = "MarsTime/MarsTime-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1F751C4615695A0B0000E635 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MarsTime.app/MarsTime";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MarsTime/MarsTime-Prefix.pch";
+				INFOPLIST_FILE = "MarsTimeTests/MarsTimeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		1F751C4715695A0B0000E635 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MarsTime.app/MarsTime";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MarsTime/MarsTime-Prefix.pch";
+				INFOPLIST_FILE = "MarsTimeTests/MarsTimeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F751BFB15695A0B0000E635 /* Build configuration list for PBXProject "MarsTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F751C4015695A0B0000E635 /* Debug */,
+				1F751C4115695A0B0000E635 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F751C4215695A0B0000E635 /* Build configuration list for PBXNativeTarget "MarsTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F751C4315695A0B0000E635 /* Debug */,
+				1F751C4415695A0B0000E635 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F751C4515695A0B0000E635 /* Build configuration list for PBXNativeTarget "MarsTimeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F751C4615695A0B0000E635 /* Debug */,
+				1F751C4715695A0B0000E635 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F751BF815695A0B0000E635 /* Project object */;
+}
