@@ -1,18 +1,21 @@
 //
-//  SecondViewController.m
+//  FirstViewController.m
 //  MarsTime
 //
 //  Created by Jeffrey McGee on 5/20/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "ClockViewController.h"
 
-@interface SecondViewController ()
+@interface ClockViewController ()
 
 @end
 
-@implementation SecondViewController
+@implementation ClockViewController
+@synthesize tz_label;
+@synthesize time_label;
+@synthesize date_label;
 
 - (void)viewDidLoad
 {
@@ -22,6 +25,9 @@
 
 - (void)viewDidUnload
 {
+    [self setTz_label:nil];
+    [self setTime_label:nil];
+    [self setDate_label:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }

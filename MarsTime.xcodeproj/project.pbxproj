@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F01E08315697D1E00AEB1FF /* AlarmsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F01E08215697D1E00AEB1FF /* AlarmsViewController.m */; };
 		1F751C0615695A0B0000E635 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F751C0515695A0B0000E635 /* UIKit.framework */; };
 		1F751C0815695A0B0000E635 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F751C0715695A0B0000E635 /* Foundation.framework */; };
 		1F751C0A15695A0B0000E635 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F751C0915695A0B0000E635 /* CoreGraphics.framework */; };
@@ -15,10 +16,10 @@
 		1F751C1615695A0B0000E635 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F751C1515695A0B0000E635 /* AppDelegate.m */; };
 		1F751C1915695A0B0000E635 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F751C1715695A0B0000E635 /* MainStoryboard_iPhone.storyboard */; };
 		1F751C1C15695A0B0000E635 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F751C1A15695A0B0000E635 /* MainStoryboard_iPad.storyboard */; };
-		1F751C1F15695A0B0000E635 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F751C1E15695A0B0000E635 /* FirstViewController.m */; };
+		1F751C1F15695A0B0000E635 /* ClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F751C1E15695A0B0000E635 /* ClockViewController.m */; };
 		1F751C2115695A0B0000E635 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F751C2015695A0B0000E635 /* first.png */; };
 		1F751C2315695A0B0000E635 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F751C2215695A0B0000E635 /* first@2x.png */; };
-		1F751C2615695A0B0000E635 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F751C2515695A0B0000E635 /* SecondViewController.m */; };
+		1F751C2615695A0B0000E635 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F751C2515695A0B0000E635 /* AboutViewController.m */; };
 		1F751C2815695A0B0000E635 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F751C2715695A0B0000E635 /* second.png */; };
 		1F751C2A15695A0B0000E635 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F751C2915695A0B0000E635 /* second@2x.png */; };
 		1F751C3215695A0B0000E635 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F751C3115695A0B0000E635 /* SenTestingKit.framework */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F01E08115697D1E00AEB1FF /* AlarmsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmsViewController.h; sourceTree = "<group>"; };
+		1F01E08215697D1E00AEB1FF /* AlarmsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmsViewController.m; sourceTree = "<group>"; };
 		1F751C0115695A0B0000E635 /* MarsTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarsTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F751C0515695A0B0000E635 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1F751C0715695A0B0000E635 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -51,12 +54,12 @@
 		1F751C1515695A0B0000E635 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1F751C1815695A0B0000E635 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		1F751C1B15695A0B0000E635 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		1F751C1D15695A0B0000E635 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		1F751C1E15695A0B0000E635 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		1F751C1D15695A0B0000E635 /* ClockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClockViewController.h; sourceTree = "<group>"; };
+		1F751C1E15695A0B0000E635 /* ClockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClockViewController.m; sourceTree = "<group>"; };
 		1F751C2015695A0B0000E635 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		1F751C2215695A0B0000E635 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		1F751C2415695A0B0000E635 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		1F751C2515695A0B0000E635 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		1F751C2415695A0B0000E635 /* AboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		1F751C2515695A0B0000E635 /* AboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		1F751C2715695A0B0000E635 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		1F751C2915695A0B0000E635 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		1F751C3015695A0B0000E635 /* MarsTimeTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarsTimeTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,12 +131,14 @@
 				1F751C1515695A0B0000E635 /* AppDelegate.m */,
 				1F751C1715695A0B0000E635 /* MainStoryboard_iPhone.storyboard */,
 				1F751C1A15695A0B0000E635 /* MainStoryboard_iPad.storyboard */,
-				1F751C1D15695A0B0000E635 /* FirstViewController.h */,
-				1F751C1E15695A0B0000E635 /* FirstViewController.m */,
+				1F751C1D15695A0B0000E635 /* ClockViewController.h */,
+				1F751C1E15695A0B0000E635 /* ClockViewController.m */,
+				1F01E08115697D1E00AEB1FF /* AlarmsViewController.h */,
+				1F01E08215697D1E00AEB1FF /* AlarmsViewController.m */,
+				1F751C2415695A0B0000E635 /* AboutViewController.h */,
+				1F751C2515695A0B0000E635 /* AboutViewController.m */,
 				1F751C2015695A0B0000E635 /* first.png */,
 				1F751C2215695A0B0000E635 /* first@2x.png */,
-				1F751C2415695A0B0000E635 /* SecondViewController.h */,
-				1F751C2515695A0B0000E635 /* SecondViewController.m */,
 				1F751C2715695A0B0000E635 /* second.png */,
 				1F751C2915695A0B0000E635 /* second@2x.png */,
 				1F751C0C15695A0B0000E635 /* Supporting Files */,
@@ -284,8 +289,9 @@
 			files = (
 				1F751C1215695A0B0000E635 /* main.m in Sources */,
 				1F751C1615695A0B0000E635 /* AppDelegate.m in Sources */,
-				1F751C1F15695A0B0000E635 /* FirstViewController.m in Sources */,
-				1F751C2615695A0B0000E635 /* SecondViewController.m in Sources */,
+				1F751C1F15695A0B0000E635 /* ClockViewController.m in Sources */,
+				1F751C2615695A0B0000E635 /* AboutViewController.m in Sources */,
+				1F01E08315697D1E00AEB1FF /* AlarmsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +471,7 @@
 				1F751C4415695A0B0000E635 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F751C4515695A0B0000E635 /* Build configuration list for PBXNativeTarget "MarsTimeTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +480,7 @@
 				1F751C4715695A0B0000E635 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,18 +1,18 @@
 //
-//  FirstViewController.m
+//  SecondViewController.m
 //  MarsTime
 //
 //  Created by Jeffrey McGee on 5/20/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "AboutViewController.h"
 
-@interface FirstViewController ()
+@interface AboutViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation AboutViewController
 
 - (void)viewDidLoad
 {
