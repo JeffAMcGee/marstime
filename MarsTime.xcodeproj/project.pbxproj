@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1F01E08315697D1E00AEB1FF /* AlarmsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F01E08215697D1E00AEB1FF /* AlarmsViewController.m */; };
+		1F01E08915698D9E00AEB1FF /* MarsTimeZone.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F01E08815698D9E00AEB1FF /* MarsTimeZone.m */; };
+		1F01E0901569A6EB00AEB1FF /* MarsDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F01E08F1569A6EB00AEB1FF /* MarsDate.m */; };
 		1F751C0615695A0B0000E635 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F751C0515695A0B0000E635 /* UIKit.framework */; };
 		1F751C0815695A0B0000E635 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F751C0715695A0B0000E635 /* Foundation.framework */; };
 		1F751C0A15695A0B0000E635 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F751C0915695A0B0000E635 /* CoreGraphics.framework */; };
@@ -42,6 +44,10 @@
 /* Begin PBXFileReference section */
 		1F01E08115697D1E00AEB1FF /* AlarmsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmsViewController.h; sourceTree = "<group>"; };
 		1F01E08215697D1E00AEB1FF /* AlarmsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmsViewController.m; sourceTree = "<group>"; };
+		1F01E08715698D9E00AEB1FF /* MarsTimeZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarsTimeZone.h; sourceTree = "<group>"; };
+		1F01E08815698D9E00AEB1FF /* MarsTimeZone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarsTimeZone.m; sourceTree = "<group>"; };
+		1F01E08E1569A6EB00AEB1FF /* MarsDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarsDate.h; sourceTree = "<group>"; };
+		1F01E08F1569A6EB00AEB1FF /* MarsDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarsDate.m; sourceTree = "<group>"; };
 		1F751C0115695A0B0000E635 /* MarsTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarsTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F751C0515695A0B0000E635 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1F751C0715695A0B0000E635 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -127,10 +133,14 @@
 		1F751C0B15695A0B0000E635 /* MarsTime */ = {
 			isa = PBXGroup;
 			children = (
-				1F751C1415695A0B0000E635 /* AppDelegate.h */,
-				1F751C1515695A0B0000E635 /* AppDelegate.m */,
+				1F01E08715698D9E00AEB1FF /* MarsTimeZone.h */,
+				1F01E08815698D9E00AEB1FF /* MarsTimeZone.m */,
+				1F01E08E1569A6EB00AEB1FF /* MarsDate.h */,
+				1F01E08F1569A6EB00AEB1FF /* MarsDate.m */,
 				1F751C1715695A0B0000E635 /* MainStoryboard_iPhone.storyboard */,
 				1F751C1A15695A0B0000E635 /* MainStoryboard_iPad.storyboard */,
+				1F751C1415695A0B0000E635 /* AppDelegate.h */,
+				1F751C1515695A0B0000E635 /* AppDelegate.m */,
 				1F751C1D15695A0B0000E635 /* ClockViewController.h */,
 				1F751C1E15695A0B0000E635 /* ClockViewController.m */,
 				1F01E08115697D1E00AEB1FF /* AlarmsViewController.h */,
@@ -293,6 +303,8 @@
 				1F751C1F15695A0B0000E635 /* ClockViewController.m in Sources */,
 				1F751C2615695A0B0000E635 /* AboutViewController.m in Sources */,
 				1F01E08315697D1E00AEB1FF /* AlarmsViewController.m in Sources */,
+				1F01E08915698D9E00AEB1FF /* MarsTimeZone.m in Sources */,
+				1F01E0901569A6EB00AEB1FF /* MarsDate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
