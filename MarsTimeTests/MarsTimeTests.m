@@ -7,6 +7,7 @@
 //
 
 #import "MarsTimeTests.h"
+#import "MarsDate.h"
 
 @implementation MarsTimeTests
 
@@ -26,7 +27,13 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in MarsTimeTests");
+    MarsDate *d = [[MarsDate alloc] initWithTZ:nil atSol:3 andTime:7275.5];
+    STAssertEquals(d.sol, 3,nil);
+    
+    STAssertEquals([d hrs], 2,nil);
+    STAssertEquals([d mins], 1,nil);
+    STAssertEquals([d secs], 15.5,nil);
+
 }
 
 @end

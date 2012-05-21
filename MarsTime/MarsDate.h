@@ -7,9 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+@class MarsTimeZone;
 
 @interface MarsDate : NSObject
+@property(weak, readonly) MarsTimeZone* tz;
 @property(assign, readonly) int sol;
 @property(assign, readonly) NSTimeInterval time;
+
+- (MarsDate*) initWithTZ:(MarsTimeZone *)theTZ atSol: (int) theSol andTime:(NSTimeInterval) theTime;
+
+- (int) hrs;
+- (int) mins;
+- (NSTimeInterval) secs;
 
 @end

@@ -10,7 +10,7 @@
 @class MarsDate;
 
 @interface MarsTimeZone : NSObject
-@property(copy, readonly) NSString *label;
+@property(retain, readonly) NSString *label;
 
 - (MarsDate *)marsDate:(NSDate *)date;
 - (NSDate *)earthDate:(MarsDate *)date;
