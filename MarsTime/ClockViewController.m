@@ -26,7 +26,13 @@
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     self.timeZone = [appDelegate currentTimeZone];
 	// Do any additional setup after loading the view, typically from a nib.
-    [self updateTime];
+    [self updateTime:NULL];
+
+    clockTimer = [NSTimer scheduledTimerWithTimeInterval:.25
+                    target:self
+                    selector:@selector(updateTime:)
+                    userInfo:nil
+                    repeats:YES];
 }
 
 - (void)viewDidUnload
@@ -34,6 +40,7 @@
     [self setTz_label:nil];
     [self setTime_label:nil];
     [self setDate_label:nil];
+    [clockTimer invalidate];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -47,7 +54,7 @@
     }
 }
 
-- (void)updateTime
+- (void)updateTime:(NSTimer *) theTimer
 {
     MarsDate *now = [self.timeZone marsDate:[NSDate date]];
     self.date_label.text = [NSString stringWithFormat:@"Sol %d", [now sol]];

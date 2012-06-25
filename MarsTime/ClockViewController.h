@@ -9,7 +9,10 @@
 
 @class MarsTimeZone;
 
-@interface ClockViewController : UIViewController
+@interface ClockViewController : UIViewController {
+    NSTimer *clockTimer;
+}
+
 @property (weak, nonatomic) IBOutlet UILabel *tz_label;
 @property (weak, nonatomic) IBOutlet UILabel *time_label;
 @property (weak, nonatomic) IBOutlet UILabel *date_label;
