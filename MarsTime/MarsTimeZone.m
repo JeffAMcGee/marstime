@@ -19,7 +19,8 @@
     static NSDictionary* tzs = nil;
     if(!tzs) {
         tzs = [NSDictionary dictionaryWithObjectsAndKeys:
-               @"MSL",[[MarsTimeZone alloc] initWithOffset:365867400 andDayLength:88775.244],
+               [[MarsTimeZone alloc] initWithOffset:365867400 andDayLength:88775.244],
+               @"MSL",
                nil];
     }
     return tzs;

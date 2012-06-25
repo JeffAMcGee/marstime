@@ -7,8 +7,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class MarsTimeZone;
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
+- (MarsTimeZone*)currentTimeZone;
 
 @end

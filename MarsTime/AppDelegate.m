@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MarsTimeZone.h"
 
 @implementation AppDelegate
 
@@ -44,4 +45,9 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (MarsTimeZone*)currentTimeZone
+{
+    // FIXME: let the user pick a timezone.
+    return [[MarsTimeZone timeZones] valueForKey:@"MSL"];
+}
 @end

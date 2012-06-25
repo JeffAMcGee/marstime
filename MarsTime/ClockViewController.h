@@ -7,9 +7,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class MarsTimeZone;
+
 @interface ClockViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *tz_label;
 @property (weak, nonatomic) IBOutlet UILabel *time_label;
 @property (weak, nonatomic) IBOutlet UILabel *date_label;
+@property (weak, nonatomic) MarsTimeZone *timeZone;
 
 @end
