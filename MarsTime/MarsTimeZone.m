@@ -15,6 +15,15 @@
     NSTimeInterval dayLength;
 }
 @synthesize label;
++ (NSDictionary*) timeZones {
+    static NSDictionary* tzs = nil;
+    if(!tzs) {
+        tzs = [NSDictionary dictionaryWithObjectsAndKeys:
+               @"MSL",[[MarsTimeZone alloc] initWithOffset:365867400 andDayLength:88775.244],
+               nil];
+    }
+    return tzs;
+}
 
 - (MarsTimeZone*) initWithOffset:(NSTimeInterval)theOffset
                 andDayLength: (NSTimeInterval) theDayLength {
