@@ -97,6 +97,10 @@ Fork me on github: https://github.com/jeffamcgee/MarsTime</string>
                             <pickerView contentMode="scaleToFill" id="uHr-ef-S3c">
                                 <rect key="frame" x="0.0" y="195" width="320" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ROr-v6-lgL" id="55D-hv-bdx"/>
+                                    <outlet property="delegate" destination="ROr-v6-lgL" id="gms-qL-DCf"/>
+                                </connections>
                             </pickerView>
                             <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="b7O-wc-h6m">
                                 <rect key="frame" x="221" y="72" width="79" height="27"/>

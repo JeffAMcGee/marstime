@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AlarmsViewController : UIViewController
+@interface AlarmsViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 @property (weak, nonatomic) IBOutlet UISwitch *alarm_switch;
 @property (weak, nonatomic) IBOutlet UIPickerView *time_picker;
 
