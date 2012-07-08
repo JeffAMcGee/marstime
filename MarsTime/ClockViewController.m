@@ -15,9 +15,9 @@
 @end
 
 @implementation ClockViewController
-@synthesize tz_label;
-@synthesize time_label;
-@synthesize date_label;
+@synthesize tzLabel;
+@synthesize timeLabel;
+@synthesize dateLabel;
 @synthesize timeZone;
 
 - (void)viewDidLoad
@@ -37,9 +37,9 @@
 
 - (void)viewDidUnload
 {
-    [self setTz_label:nil];
-    [self setTime_label:nil];
-    [self setDate_label:nil];
+    [self setTzLabel:nil];
+    [self setTimeLabel:nil];
+    [self setDateLabel:nil];
     [clockTimer invalidate];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
@@ -57,8 +57,8 @@
 - (void)updateTime:(NSTimer *) theTimer
 {
     MarsDate *now = [self.timeZone marsDate:[NSDate date]];
-    self.date_label.text = [NSString stringWithFormat:@"Sol %d", [now sol]];
-    self.time_label.text = [NSString
+    self.dateLabel.text = [NSString stringWithFormat:@"Sol %d", [now sol]];
+    self.timeLabel.text = [NSString
                             stringWithFormat:@"%d:%02d:%02d",
                             [now hrs], [now mins], (int)[now secs]];
 }

@@ -13,9 +13,9 @@
     NSTimer *clockTimer;
 }
 
-@property (weak, nonatomic) IBOutlet UILabel *tz_label;
-@property (weak, nonatomic) IBOutlet UILabel *time_label;
-@property (weak, nonatomic) IBOutlet UILabel *date_label;
+@property (weak, nonatomic) IBOutlet UILabel *tzLabel;
+@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 @property (weak, nonatomic) MarsTimeZone *timeZone;
 
 @end

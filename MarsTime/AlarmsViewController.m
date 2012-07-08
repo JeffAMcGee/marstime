@@ -12,8 +12,8 @@
 @end
 
 @implementation AlarmsViewController
-@synthesize alarm_switch;
-@synthesize time_picker;
+@synthesize alarmSwitch;
+@synthesize timePicker;
 @synthesize earthAlarmLabel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -33,8 +33,8 @@
 
 - (void)viewDidUnload
 {
-    [self setAlarm_switch:nil];
-    [self setTime_picker:nil];
+    [self setAlarmSwitch:nil];
+    [self setTimePicker:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }

@@ -41,9 +41,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Clock" image="first" id="7"/>
                     <connections>
-                        <outlet property="date_label" destination="otW-ux-bKI" id="fPj-EI-Cdm"/>
-                        <outlet property="time_label" destination="jxX-qi-pkO" id="bRo-Jq-l6Z"/>
-                        <outlet property="tz_label" destination="20" id="eyS-ml-e2t"/>
+                        <outlet property="dateLabel" destination="otW-ux-bKI" id="wJ7-uh-Xhx"/>
+                        <outlet property="timeLabel" destination="jxX-qi-pkO" id="1s5-o8-lcM"/>
+                        <outlet property="tzLabel" destination="20" id="TMO-9l-Iyd"/>
                     </connections>
                 </viewController>
             </objects>
@@ -132,9 +132,9 @@ Fork me on github: https://github.com/jeffamcgee/MarsTime</string>
                     </view>
                     <tabBarItem key="tabBarItem" title="Alarm" id="bFi-FC-5Fo"/>
                     <connections>
-                        <outlet property="alarm_switch" destination="b7O-wc-h6m" id="ERx-jn-vP9"/>
+                        <outlet property="alarmSwitch" destination="b7O-wc-h6m" id="r0b-Zs-4u7"/>
                         <outlet property="earthAlarmLabel" destination="Zm6-KW-3IL" id="vse-gd-n5I"/>
-                        <outlet property="time_picker" destination="uHr-ef-S3c" id="7yX-1o-Z5e"/>
+                        <outlet property="timePicker" destination="uHr-ef-S3c" id="0PQ-bE-Jhb"/>
                     </connections>
                 </viewController>
             </objects>
