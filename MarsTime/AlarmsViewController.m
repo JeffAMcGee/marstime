@@ -14,6 +14,7 @@
 @implementation AlarmsViewController
 @synthesize alarm_switch;
 @synthesize time_picker;
+@synthesize earthAlarmLabel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

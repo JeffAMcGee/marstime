@@ -10,5 +10,5 @@
 @interface AlarmsViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 @property (weak, nonatomic) IBOutlet UISwitch *alarm_switch;
 @property (weak, nonatomic) IBOutlet UIPickerView *time_picker;
-
+@property (weak, nonatomic) IBOutlet UILabel *earthAlarmLabel;
 @end
