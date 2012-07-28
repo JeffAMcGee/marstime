@@ -40,6 +40,16 @@
     return [[MarsDate alloc] initWithTZ:self atSol:sol andTime:time];
 }
 
+- (MarsDate *)nextMarsDateAtHour:(int)hr andMin:(int)min {
+    MarsDate *now = [self marsDate:[NSDate date]];
+    int time = hr*3600+min*60;
+    int sol = now.sol;
+    if(time<now.time) {
+        sol++;
+    }
+    return [[MarsDate alloc] initWithTZ:self atSol:sol andTime:time];
+}
+
 - (NSDate *)earthDate:(MarsDate *)date {
     NSAssert(date.tz==self,@"wrong timezone");
     NSTimeInterval secs= date.sol*dayLength+date.time;

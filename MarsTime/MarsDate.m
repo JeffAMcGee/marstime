@@ -17,6 +17,17 @@
     time = theTime;
     return self;
 }
+
+
+- (MarsDate*) initWithTZ:(MarsTimeZone *)theTZ atSol: (int) theSol
+                  atHour:(int)hr andMin:(int)min {
+    tz = theTZ;
+    sol = theSol;
+    time = hr*3600.0+min*60.0;
+    return self;
+}
+
+
 - (int) hrs {
     return floor(time/3600.0);
 }

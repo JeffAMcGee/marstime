@@ -16,6 +16,9 @@
 
 - (MarsDate*) initWithTZ:(MarsTimeZone *)theTZ atSol: (int) theSol andTime:(NSTimeInterval) theTime;
 
+- (MarsDate*) initWithTZ:(MarsTimeZone *)theTZ atSol: (int) theSol
+                  atHour:(int)hr andMin:(int)min;
+
 - (int) hrs;
 - (int) mins;
 - (NSTimeInterval) secs;

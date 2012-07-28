@@ -6,6 +6,9 @@
 //
 
 #import "AlarmsViewController.h"
+#import "MarsTimeZone.h"
+#import "MarsDate.h"
+#import "AppDelegate.h"
 
 @interface AlarmsViewController ()
 
@@ -20,7 +23,8 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        hr = 0;
+        min = 0;
     }
     return self;
 }
@@ -29,6 +33,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    [self updateEarthLabel];
 }
 
 - (void)viewDidUnload
@@ -70,6 +75,30 @@
 
 - (CGFloat)pickerView:(UIPickerView *)pickerView rowHeightForComponent:(NSInteger)component {
     return 35;
+}
+
+- (void)pickerView:(UIPickerView *)pickerView
+            didSelectRow:(NSInteger)row
+            inComponent:(NSInteger)component {
+    if(component==0) {
+        hr = row;
+    } else {
+        min = row;
+    }
+    [self updateEarthLabel];
+}
+
+
+- (void)updateEarthLabel {
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    MarsTimeZone *timeZone = [appDelegate currentTimeZone];
+    NSDate *nextDate = [timeZone earthDate:[timeZone nextMarsDateAtHour:hr andMin:min]];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateStyle:NSDateFormatterShortStyle];
+    [dateFormatter setTimeStyle:NSDateFormatterFullStyle];
+    self.earthAlarmLabel.text = [NSString stringWithFormat:
+            @"The next time this alarm will trigger is %@.",
+            [dateFormatter stringFromDate:nextDate]];
 }
 
 @end

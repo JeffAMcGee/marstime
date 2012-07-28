@@ -19,6 +19,7 @@
 - (MarsTimeZone*) initWithOffset:(NSTimeInterval)theOffset
                     andDayLength: (NSTimeInterval) theDayLength;
 
+- (MarsDate *)nextMarsDateAtHour:(int)hr andMin:(int)min;
 - (MarsDate *)marsDate:(NSDate *)date;
 - (NSDate *)earthDate:(MarsDate *)date;
 
