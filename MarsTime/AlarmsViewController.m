@@ -23,8 +23,10 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        hr = 0;
-        min = 0;
+        NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+        hr = [prefs integerForKey:@"alarm_hr"];
+        min = [prefs integerForKey:@"alarm_min"];
+        armed = [prefs boolForKey:@"alarm_armed"];
     }
     return self;
 }
@@ -32,7 +34,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    [self.timePicker selectRow:hr inComponent:0 animated:NO];
+    [self.timePicker selectRow:min inComponent:1 animated:NO];
+    self.alarmSwitch.on = armed;
+    [self.alarmSwitch addTarget:self action:@selector(switchFlipped:) forControlEvents:UIControlEventValueChanged];
     [self updateEarthLabel];
 }
 
@@ -47,6 +52,14 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (void)switchFlipped:(id)sender {
+    UISwitch* sw =(UISwitch*)sender;
+    armed = sw.on;
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    [prefs setBool:armed forKey:@"alarm_armed"];
+    [self updateEarthLabel];
 }
 
 // Time Picker
@@ -80,12 +93,16 @@
 - (void)pickerView:(UIPickerView *)pickerView
             didSelectRow:(NSInteger)row
             inComponent:(NSInteger)component {
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     if(component==0) {
         hr = row;
+        [prefs setInteger:row forKey:@"alarm_hr"];
     } else {
         min = row;
+        [prefs setInteger:row forKey:@"alarm_min"];
     }
     [self updateEarthLabel];
+
 }
 
 
@@ -96,8 +113,15 @@
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateStyle:NSDateFormatterShortStyle];
     [dateFormatter setTimeStyle:NSDateFormatterFullStyle];
+    NSString *intro;
+    if (armed) {
+        intro = @"The";
+    } else {
+        intro = @"If you turn it on, the";
+    }
     self.earthAlarmLabel.text = [NSString stringWithFormat:
-            @"The next time this alarm will trigger is %@.",
+            @"%@ next time this alarm will go off is %@.",
+            intro,
             [dateFormatter stringFromDate:nextDate]];
 }
 

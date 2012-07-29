@@ -10,6 +10,7 @@
 @interface AlarmsViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate> {
     int hr;
     int min;
+    BOOL armed;
 }
 
 @property (weak, nonatomic) IBOutlet UISwitch *alarmSwitch;
@@ -17,4 +18,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *earthAlarmLabel;
 
 - (void)updateEarthLabel;
+- (void)switchFlipped:(id)sender;
+
 @end
