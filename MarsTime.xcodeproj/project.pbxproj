@@ -19,16 +19,18 @@
 		1F751C1915695A0B0000E635 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F751C1715695A0B0000E635 /* MainStoryboard_iPhone.storyboard */; };
 		1F751C1C15695A0B0000E635 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F751C1A15695A0B0000E635 /* MainStoryboard_iPad.storyboard */; };
 		1F751C1F15695A0B0000E635 /* ClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F751C1E15695A0B0000E635 /* ClockViewController.m */; };
-		1F751C2115695A0B0000E635 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F751C2015695A0B0000E635 /* first.png */; };
-		1F751C2315695A0B0000E635 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F751C2215695A0B0000E635 /* first@2x.png */; };
 		1F751C2615695A0B0000E635 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F751C2515695A0B0000E635 /* AboutViewController.m */; };
-		1F751C2815695A0B0000E635 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F751C2715695A0B0000E635 /* second.png */; };
-		1F751C2A15695A0B0000E635 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F751C2915695A0B0000E635 /* second@2x.png */; };
 		1F751C3215695A0B0000E635 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F751C3115695A0B0000E635 /* SenTestingKit.framework */; };
 		1F751C3315695A0B0000E635 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F751C0515695A0B0000E635 /* UIKit.framework */; };
 		1F751C3415695A0B0000E635 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F751C0715695A0B0000E635 /* Foundation.framework */; };
 		1F751C3C15695A0B0000E635 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F751C3A15695A0B0000E635 /* InfoPlist.strings */; };
 		1F751C3F15695A0B0000E635 /* MarsTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F751C3E15695A0B0000E635 /* MarsTimeTests.m */; };
+		1FB6D7E415C5DD1900221CB2 /* alarm_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FB6D7E115C5DD1900221CB2 /* alarm_on.png */; };
+		1FB6D7E515C5DD1900221CB2 /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FB6D7E215C5DD1900221CB2 /* clock.png */; };
+		1FB6D7E615C5DD1900221CB2 /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FB6D7E315C5DD1900221CB2 /* help.png */; };
+		1FB6D7EB15C5DF3B00221CB2 /* alarm_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FB6D7E815C5DF3B00221CB2 /* alarm_on@2x.png */; };
+		1FB6D7EC15C5DF3B00221CB2 /* clock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FB6D7E915C5DF3B00221CB2 /* clock@2x.png */; };
+		1FB6D7ED15C5DF3B00221CB2 /* help@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FB6D7EA15C5DF3B00221CB2 /* help@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,18 +64,20 @@
 		1F751C1B15695A0B0000E635 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		1F751C1D15695A0B0000E635 /* ClockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClockViewController.h; sourceTree = "<group>"; };
 		1F751C1E15695A0B0000E635 /* ClockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClockViewController.m; sourceTree = "<group>"; };
-		1F751C2015695A0B0000E635 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		1F751C2215695A0B0000E635 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		1F751C2415695A0B0000E635 /* AboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		1F751C2515695A0B0000E635 /* AboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
-		1F751C2715695A0B0000E635 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		1F751C2915695A0B0000E635 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		1F751C3015695A0B0000E635 /* MarsTimeTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarsTimeTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F751C3115695A0B0000E635 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		1F751C3915695A0B0000E635 /* MarsTimeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MarsTimeTests-Info.plist"; sourceTree = "<group>"; };
 		1F751C3B15695A0B0000E635 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1F751C3D15695A0B0000E635 /* MarsTimeTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarsTimeTests.h; sourceTree = "<group>"; };
 		1F751C3E15695A0B0000E635 /* MarsTimeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarsTimeTests.m; sourceTree = "<group>"; };
+		1FB6D7E115C5DD1900221CB2 /* alarm_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alarm_on.png; sourceTree = "<group>"; };
+		1FB6D7E215C5DD1900221CB2 /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
+		1FB6D7E315C5DD1900221CB2 /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help.png; sourceTree = "<group>"; };
+		1FB6D7E815C5DF3B00221CB2 /* alarm_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alarm_on@2x.png"; sourceTree = "<group>"; };
+		1FB6D7E915C5DF3B00221CB2 /* clock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock@2x.png"; sourceTree = "<group>"; };
+		1FB6D7EA15C5DF3B00221CB2 /* help@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "help@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,10 +151,12 @@
 				1F01E08215697D1E00AEB1FF /* AlarmsViewController.m */,
 				1F751C2415695A0B0000E635 /* AboutViewController.h */,
 				1F751C2515695A0B0000E635 /* AboutViewController.m */,
-				1F751C2015695A0B0000E635 /* first.png */,
-				1F751C2215695A0B0000E635 /* first@2x.png */,
-				1F751C2715695A0B0000E635 /* second.png */,
-				1F751C2915695A0B0000E635 /* second@2x.png */,
+				1FB6D7E115C5DD1900221CB2 /* alarm_on.png */,
+				1FB6D7E815C5DF3B00221CB2 /* alarm_on@2x.png */,
+				1FB6D7E215C5DD1900221CB2 /* clock.png */,
+				1FB6D7E915C5DF3B00221CB2 /* clock@2x.png */,
+				1FB6D7E315C5DD1900221CB2 /* help.png */,
+				1FB6D7EA15C5DF3B00221CB2 /* help@2x.png */,
 				1F751C0C15695A0B0000E635 /* Supporting Files */,
 			);
 			path = MarsTime;
@@ -260,10 +266,12 @@
 				1F751C1015695A0B0000E635 /* InfoPlist.strings in Resources */,
 				1F751C1915695A0B0000E635 /* MainStoryboard_iPhone.storyboard in Resources */,
 				1F751C1C15695A0B0000E635 /* MainStoryboard_iPad.storyboard in Resources */,
-				1F751C2115695A0B0000E635 /* first.png in Resources */,
-				1F751C2315695A0B0000E635 /* first@2x.png in Resources */,
-				1F751C2815695A0B0000E635 /* second.png in Resources */,
-				1F751C2A15695A0B0000E635 /* second@2x.png in Resources */,
+				1FB6D7E415C5DD1900221CB2 /* alarm_on.png in Resources */,
+				1FB6D7E515C5DD1900221CB2 /* clock.png in Resources */,
+				1FB6D7E615C5DD1900221CB2 /* help.png in Resources */,
+				1FB6D7EB15C5DF3B00221CB2 /* alarm_on@2x.png in Resources */,
+				1FB6D7EC15C5DF3B00221CB2 /* clock@2x.png in Resources */,
+				1FB6D7ED15C5DF3B00221CB2 /* help@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

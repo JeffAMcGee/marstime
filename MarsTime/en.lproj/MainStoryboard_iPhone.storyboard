@@ -39,7 +39,7 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Clock" image="first" id="7"/>
+                    <tabBarItem key="tabBarItem" title="Clock" image="clock.png" id="7"/>
                     <connections>
                         <outlet property="dateLabel" destination="otW-ux-bKI" id="wJ7-uh-Xhx"/>
                         <outlet property="timeLabel" destination="jxX-qi-pkO" id="1s5-o8-lcM"/>
@@ -80,7 +80,7 @@ Fork me on github: https://github.com/jeffamcgee/MarsTime</string>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="About" image="second" id="6"/>
+                    <tabBarItem key="tabBarItem" title="About" image="help.png" id="6"/>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="653" y="498"/>
@@ -130,7 +130,7 @@ Fork me on github: https://github.com/jeffamcgee/MarsTime</string>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Alarm" id="bFi-FC-5Fo"/>
+                    <tabBarItem key="tabBarItem" title="Alarm" image="alarm_on.png" id="bFi-FC-5Fo"/>
                     <connections>
                         <outlet property="alarmSwitch" destination="b7O-wc-h6m" id="r0b-Zs-4u7"/>
                         <outlet property="earthAlarmLabel" destination="Zm6-KW-3IL" id="vse-gd-n5I"/>
@@ -162,8 +162,9 @@ Fork me on github: https://github.com/jeffamcgee/MarsTime</string>
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="16" height="16"/>
-        <image name="second" width="16" height="16"/>
+        <image name="alarm_on.png" width="64" height="64"/>
+        <image name="clock.png" width="64" height="64"/>
+        <image name="help.png" width="64" height="64"/>
     </resources>
     <classes>
         <class className="AboutViewController" superclassName="UIViewController">
