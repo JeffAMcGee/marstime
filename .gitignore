@@ -3,6 +3,7 @@
 *.swo
 *~.nib
 *.log
+*.xcf
 
 *.xcodeproj/project.xcworkspace
 *.xcodeproj/xcuserdata

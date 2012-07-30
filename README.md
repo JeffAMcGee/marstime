@@ -8,6 +8,10 @@ Icons
 The tab bar icons were created by Alex Shutin at TWG. They are shared under
 the  CC BY-SA 3.0 license: http://blog.twg.ca/2009/09/free-iphone-toolbar-icons/
 
+The mars photo for the main icon is from JPL.
+
+FIXME: add JPL image credit here when you have internet access.
+
 License
 -------
 Copyright (c) 2012, Jeffrey McGee

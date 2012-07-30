@@ -31,6 +31,9 @@
 		1FB6D7EB15C5DF3B00221CB2 /* alarm_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FB6D7E815C5DF3B00221CB2 /* alarm_on@2x.png */; };
 		1FB6D7EC15C5DF3B00221CB2 /* clock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FB6D7E915C5DF3B00221CB2 /* clock@2x.png */; };
 		1FB6D7ED15C5DF3B00221CB2 /* help@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FB6D7EA15C5DF3B00221CB2 /* help@2x.png */; };
+		1FC0B91915C6FB120092AF45 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FC0B91615C6FB120092AF45 /* Icon.png */; };
+		1FC0B91B15C6FB120092AF45 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 1FC0B91815C6FB120092AF45 /* iTunesArtwork */; };
+		1FC0B91D15C6FD8E0092AF45 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FC0B91C15C6FD8E0092AF45 /* Icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +81,9 @@
 		1FB6D7E815C5DF3B00221CB2 /* alarm_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alarm_on@2x.png"; sourceTree = "<group>"; };
 		1FB6D7E915C5DF3B00221CB2 /* clock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock@2x.png"; sourceTree = "<group>"; };
 		1FB6D7EA15C5DF3B00221CB2 /* help@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "help@2x.png"; sourceTree = "<group>"; };
+		1FC0B91615C6FB120092AF45 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		1FC0B91815C6FB120092AF45 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		1FC0B91C15C6FD8E0092AF45 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +171,9 @@
 		1F751C0C15695A0B0000E635 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1FC0B91615C6FB120092AF45 /* Icon.png */,
+				1FC0B91C15C6FD8E0092AF45 /* Icon@2x.png */,
+				1FC0B91815C6FB120092AF45 /* iTunesArtwork */,
 				1F751C0D15695A0B0000E635 /* MarsTime-Info.plist */,
 				1F751C0E15695A0B0000E635 /* InfoPlist.strings */,
 				1F751C1115695A0B0000E635 /* main.m */,
@@ -272,6 +281,9 @@
 				1FB6D7EB15C5DF3B00221CB2 /* alarm_on@2x.png in Resources */,
 				1FB6D7EC15C5DF3B00221CB2 /* clock@2x.png in Resources */,
 				1FB6D7ED15C5DF3B00221CB2 /* help@2x.png in Resources */,
+				1FC0B91915C6FB120092AF45 /* Icon.png in Resources */,
+				1FC0B91B15C6FB120092AF45 /* iTunesArtwork in Resources */,
+				1FC0B91D15C6FD8E0092AF45 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
