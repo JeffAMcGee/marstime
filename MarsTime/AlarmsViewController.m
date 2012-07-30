@@ -23,10 +23,6 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-        hr = [prefs integerForKey:@"alarm_hr"];
-        min = [prefs integerForKey:@"alarm_min"];
-        armed = [prefs boolForKey:@"alarm_armed"];
     }
     return self;
 }
@@ -34,6 +30,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    hr = [prefs integerForKey:@"alarm_hr"];
+    min = [prefs integerForKey:@"alarm_min"];
+    armed = [prefs boolForKey:@"alarm_armed"];
     [self.timePicker selectRow:hr inComponent:0 animated:NO];
     [self.timePicker selectRow:min inComponent:1 animated:NO];
     self.alarmSwitch.on = armed;
