@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *earthAlarmLabel;
 
 - (void)updateEarthLabel;
+- (void)updateAlarms;
 - (void)switchFlipped:(id)sender;
 
 @end

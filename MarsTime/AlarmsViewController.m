@@ -39,6 +39,7 @@
     self.alarmSwitch.on = armed;
     [self.alarmSwitch addTarget:self action:@selector(switchFlipped:) forControlEvents:UIControlEventValueChanged];
     [self updateEarthLabel];
+    [self updateAlarms];
 }
 
 - (void)viewDidUnload
@@ -60,6 +61,7 @@
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     [prefs setBool:armed forKey:@"alarm_armed"];
     [self updateEarthLabel];
+    [self updateAlarms];
 }
 
 // Time Picker
@@ -105,6 +107,7 @@
 
 }
 
+// helpers
 
 - (void)updateEarthLabel {
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
@@ -123,6 +126,19 @@
             @"%@ next time this alarm will go off is %@.",
             intro,
             [dateFormatter stringFromDate:nextDate]];
+}
+
+- (void)updateAlarms {
+    UIApplication* app = [UIApplication sharedApplication];
+    if(armed) {
+        UILocalNotification *notif = [[UILocalNotification alloc] init];
+        notif.alertBody = @"Wake up!";
+        notif.fireDate = [NSDate dateWithTimeIntervalSinceNow:15.0];
+        notif.soundName = UILocalNotificationDefaultSoundName;
+        app.scheduledLocalNotifications = [NSArray arrayWithObjects:notif, nil];
+    } else {
+        [app cancelAllLocalNotifications];
+    }
 }
 
 @end
