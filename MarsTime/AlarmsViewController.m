@@ -104,7 +104,7 @@
         [prefs setInteger:row forKey:@"alarm_min"];
     }
     [self updateEarthLabel];
-
+    [self updateAlarms];
 }
 
 // helpers
@@ -130,12 +130,27 @@
 
 - (void)updateAlarms {
     UIApplication* app = [UIApplication sharedApplication];
+
     if(armed) {
-        UILocalNotification *notif = [[UILocalNotification alloc] init];
-        notif.alertBody = @"Wake up!";
-        notif.fireDate = [NSDate dateWithTimeIntervalSinceNow:15.0];
-        notif.soundName = UILocalNotificationDefaultSoundName;
-        app.scheduledLocalNotifications = [NSArray arrayWithObjects:notif, nil];
+        AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+        MarsTimeZone *timeZone = [appDelegate currentTimeZone];
+        MarsDate *trigger = [timeZone nextMarsDateAtHour:hr andMin:min];
+        int ALARM_COUNT = 60;
+        NSMutableArray *notifs = [NSMutableArray arrayWithCapacity:ALARM_COUNT];
+        NSString *alert = [NSString stringWithFormat:@"It is %d:%02d!",hr,min];
+
+        for(int day=0; day<ALARM_COUNT; day++) {
+            MarsDate *marsDate = [[MarsDate alloc]
+                                  initWithTZ:trigger.tz
+                                  atSol:trigger.sol+day
+                                  andTime:trigger.time];
+            UILocalNotification *notif = [[UILocalNotification alloc] init];
+            notif.alertBody = alert;
+            notif.fireDate = [timeZone earthDate:marsDate];
+            notif.soundName = UILocalNotificationDefaultSoundName;
+            [notifs addObject:notif];
+        }
+        app.scheduledLocalNotifications = notifs;
     } else {
         [app cancelAllLocalNotifications];
     }
