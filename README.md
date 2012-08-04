@@ -1,7 +1,8 @@
 MarsTime
 ========
 
-IOS alarm clock for various mars missions.
+IOS alarm clock for mars missions. It currently only supports MSL, but support
+could easily be added for other missions.
 
 Icons
 -----
@@ -11,6 +12,11 @@ the  CC BY-SA 3.0 license: http://blog.twg.ca/2009/09/free-iphone-toolbar-icons/
 The mars photo for the main icon is from JPL.
 
 FIXME: add JPL image credit here when you have internet access.
+
+Sounds
+------
+The sputnik, computer, and launch sounds come from NASA: http://www.nasa.gov/connect/sounds/ .  The buzz and comic sounds are from http://www.pdsounds.org/ .
+
 
 License
 -------

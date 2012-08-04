@@ -23,6 +23,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        //FIXME: Why is initWithNibName not getting called?
     }
     return self;
 }
@@ -30,12 +31,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    soundLabels = [NSArray arrayWithObjects:@"Buzzer",@"Computers",@"Launch",@"Noise",@"Sputnik", nil];
+    soundPaths = [NSArray arrayWithObjects:@"pds_buzz.m4a",@"computers.m4a",@"launch.m4a",@"pds_noise.m4a",@"sputnik.m4a", nil];
+
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     hr = [prefs integerForKey:@"alarm_hr"];
     min = [prefs integerForKey:@"alarm_min"];
     armed = [prefs boolForKey:@"alarm_armed"];
+    NSString *soundPath = [prefs objectForKey:@"alarm_sound"];
+    if(soundPath) {
+        soundIndex = [soundPaths indexOfObject:soundPath];
+    } else {
+        soundIndex = 2;
+    }
+
     [self.timePicker selectRow:hr inComponent:0 animated:NO];
     [self.timePicker selectRow:min inComponent:1 animated:NO];
+    [self.timePicker selectRow:soundIndex inComponent:2 animated:NO];
     self.alarmSwitch.on = armed;
     [self.alarmSwitch addTarget:self action:@selector(switchFlipped:) forControlEvents:UIControlEventValueChanged];
     [self updateEarthLabel];
@@ -68,24 +80,34 @@
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
 {
-    return 2;
+    return 3;
 }
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
     if(component==0) {
         return 25;
-    } else {
+    } else if(component==1){
         return 60;
+    } else {
+        return [soundLabels count];
     }
 }
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
-    return [NSString stringWithFormat:@"%02d", row];
+    if (component==2) {
+        return [soundLabels objectAtIndex:row];
+    } else {
+        return [NSString stringWithFormat:@"%02d", row];
+    }
 }
 
 - (CGFloat)pickerView:(UIPickerView *)pickerView widthForComponent:(NSInteger)component {
-	return 40;
+    if(component==2) {
+        return 120;
+    } else {
+        return 40;
+    }
 }
 
 - (CGFloat)pickerView:(UIPickerView *)pickerView rowHeightForComponent:(NSInteger)component {
@@ -99,9 +121,14 @@
     if(component==0) {
         hr = row;
         [prefs setInteger:row forKey:@"alarm_hr"];
-    } else {
+    } else if (component==1) {
         min = row;
         [prefs setInteger:row forKey:@"alarm_min"];
+    } else {
+        soundIndex = row;
+        // Store the path instead of the index so that we can add new sounds
+        // without breaking things.
+        [prefs setObject:[soundPaths objectAtIndex:row] forKey:@"alarm_sound"];
     }
     [self updateEarthLabel];
     [self updateAlarms];
@@ -147,7 +174,7 @@
             UILocalNotification *notif = [[UILocalNotification alloc] init];
             notif.alertBody = alert;
             notif.fireDate = [timeZone earthDate:marsDate];
-            notif.soundName = UILocalNotificationDefaultSoundName;
+            notif.soundName = [soundPaths objectAtIndex:soundIndex];
             [notifs addObject:notif];
         }
         app.scheduledLocalNotifications = notifs;

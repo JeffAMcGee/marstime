@@ -11,6 +11,9 @@
     int hr;
     int min;
     BOOL armed;
+    NSArray *soundLabels;
+    NSArray *soundPaths;
+    int soundIndex;
 }
 
 @property (weak, nonatomic) IBOutlet UISwitch *alarmSwitch;
