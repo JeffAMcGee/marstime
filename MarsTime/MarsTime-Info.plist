@@ -42,6 +42,8 @@
 	</array>
 	<key>UILaunchImageFile</key>
 	<string>launch.png</string>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleBlackOpaque</string>
 	<key>CFBundleIcons</key>
 	<dict>
 		<key>CFBundlePrimaryIcon</key>
