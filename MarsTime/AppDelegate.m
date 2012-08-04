@@ -8,6 +8,8 @@
 #import "AppDelegate.h"
 #import "MarsTimeZone.h"
 
+#import <AudioToolbox/AudioToolbox.h>
+
 @implementation AppDelegate
 
 @synthesize window = _window;
@@ -43,6 +45,30 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:
+(UILocalNotification *)notification {
+    /* This is all kinds of broken. If the application is running in the foreground,
+     * iOS does not play the sound and display the local notification, so we have
+     * to fake it.
+     */
+    if(application.applicationState == UIApplicationStateActive ) {
+        // FIXME: I think sound is a memory leak.
+        SystemSoundID sound;
+        NSString *soundPath = [[NSBundle mainBundle]
+                               pathForResource:notification.soundName ofType:nil];
+        AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath: soundPath], &sound);
+        AudioServicesPlaySystemSound (sound);
+        UIAlertView *alert = [[UIAlertView alloc]
+                              initWithTitle: @"MarsTime"
+                              message: notification.alertBody
+                              delegate: nil
+                              cancelButtonTitle:@"Close"
+                              otherButtonTitles:nil];
+        [alert show];
+    }
 }
 
 - (MarsTimeZone*)currentTimeZone
