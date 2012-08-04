@@ -97,7 +97,7 @@ Fork MarsTime on github: https://github.com/jeffamcgee/MarsTime</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Mars Time:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="k3c-UJ-Z4c">
-                                <rect key="frame" x="20" y="702" width="85" height="21"/>
+                                <rect key="frame" x="288" y="715" width="85" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.76862745099999996" green="0.12549019610000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -105,6 +105,13 @@ Fork MarsTime on github: https://github.com/jeffamcgee/MarsTime</string>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="The next time this alarm will trigger is...." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Zm6-KW-3IL">
                                 <rect key="frame" x="20" y="615" width="728" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.76862745099999996" green="0.12549019610000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Sound:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="CUO-wY-Dke">
+                                <rect key="frame" x="389" y="715" width="85" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.76862745099999996" green="0.12549019610000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>

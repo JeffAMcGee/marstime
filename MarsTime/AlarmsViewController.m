@@ -165,7 +165,7 @@
         intro = @"If you turn it on, the";
     }
     self.earthAlarmLabel.text = [NSString stringWithFormat:
-            @"%@ next time this alarm will go off is %@.",
+            @"%@ next time this alarm will go off will be %@.",
             intro,
             [dateFormatter stringFromDate:nextDate]];
 }
