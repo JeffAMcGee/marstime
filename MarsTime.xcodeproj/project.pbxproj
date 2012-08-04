@@ -40,6 +40,8 @@
 		1FFBBA8515CD991E00E68F03 /* sputnik.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1FFBBA8015CD991E00E68F03 /* sputnik.m4a */; };
 		1FFBBA8815CD9D3F00E68F03 /* pds_noise.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1FFBBA8715CD9D3F00E68F03 /* pds_noise.m4a */; };
 		1FFBBA8A15CDAC5000E68F03 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFBBA8915CDAC5000E68F03 /* AudioToolbox.framework */; };
+		1FFBBA9115CDCA5B00E68F03 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFBBA8F15CDCA5B00E68F03 /* launch.png */; };
+		1FFBBA9215CDCA5B00E68F03 /* launch@2px.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFBBA9015CDCA5B00E68F03 /* launch@2px.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +98,8 @@
 		1FFBBA8015CD991E00E68F03 /* sputnik.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = sputnik.m4a; sourceTree = "<group>"; };
 		1FFBBA8715CD9D3F00E68F03 /* pds_noise.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pds_noise.m4a; sourceTree = "<group>"; };
 		1FFBBA8915CDAC5000E68F03 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		1FFBBA8F15CDCA5B00E68F03 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
+		1FFBBA9015CDCA5B00E68F03 /* launch@2px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch@2px.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +189,8 @@
 		1F751C0C15695A0B0000E635 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1FFBBA8F15CDCA5B00E68F03 /* launch.png */,
+				1FFBBA9015CDCA5B00E68F03 /* launch@2px.png */,
 				1FFBBA7C15CD991E00E68F03 /* computers.m4a */,
 				1FFBBA7D15CD991E00E68F03 /* launch.m4a */,
 				1FFBBA8715CD9D3F00E68F03 /* pds_noise.m4a */,
@@ -308,6 +314,8 @@
 				1FFBBA8315CD991E00E68F03 /* pds_buzz.m4a in Resources */,
 				1FFBBA8515CD991E00E68F03 /* sputnik.m4a in Resources */,
 				1FFBBA8815CD9D3F00E68F03 /* pds_noise.m4a in Resources */,
+				1FFBBA9115CDCA5B00E68F03 /* launch.png in Resources */,
+				1FFBBA9215CDCA5B00E68F03 /* launch@2px.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
