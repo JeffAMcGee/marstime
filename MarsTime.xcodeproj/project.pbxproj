@@ -39,6 +39,7 @@
 		1FFBBA8315CD991E00E68F03 /* pds_buzz.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1FFBBA7E15CD991E00E68F03 /* pds_buzz.m4a */; };
 		1FFBBA8515CD991E00E68F03 /* sputnik.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1FFBBA8015CD991E00E68F03 /* sputnik.m4a */; };
 		1FFBBA8815CD9D3F00E68F03 /* pds_noise.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1FFBBA8715CD9D3F00E68F03 /* pds_noise.m4a */; };
+		1FFBBA8A15CDAC5000E68F03 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFBBA8915CDAC5000E68F03 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		1FFBBA7E15CD991E00E68F03 /* pds_buzz.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pds_buzz.m4a; sourceTree = "<group>"; };
 		1FFBBA8015CD991E00E68F03 /* sputnik.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = sputnik.m4a; sourceTree = "<group>"; };
 		1FFBBA8715CD9D3F00E68F03 /* pds_noise.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pds_noise.m4a; sourceTree = "<group>"; };
+		1FFBBA8915CDAC5000E68F03 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FFBBA8A15CDAC5000E68F03 /* AudioToolbox.framework in Frameworks */,
 				1F751C0615695A0B0000E635 /* UIKit.framework in Frameworks */,
 				1F751C0815695A0B0000E635 /* Foundation.framework in Frameworks */,
 				1F751C0A15695A0B0000E635 /* CoreGraphics.framework in Frameworks */,
@@ -123,6 +126,7 @@
 		1F751BF615695A0B0000E635 = {
 			isa = PBXGroup;
 			children = (
+				1FFBBA8915CDAC5000E68F03 /* AudioToolbox.framework */,
 				1F751C0B15695A0B0000E635 /* MarsTime */,
 				1F751C3715695A0B0000E635 /* MarsTimeTests */,
 				1F751C0415695A0B0000E635 /* Frameworks */,

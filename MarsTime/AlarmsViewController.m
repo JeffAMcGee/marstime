@@ -10,6 +10,8 @@
 #import "MarsDate.h"
 #import "AppDelegate.h"
 
+#import <AudioToolbox/AudioToolbox.h>
+
 @interface AlarmsViewController ()
 
 @end
@@ -18,6 +20,7 @@
 @synthesize alarmSwitch;
 @synthesize timePicker;
 @synthesize earthAlarmLabel;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -118,6 +121,10 @@
             didSelectRow:(NSInteger)row
             inComponent:(NSInteger)component {
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+
+    // FIXME: this seems wrong.
+    static SystemSoundID latestSound = -1;
+
     if(component==0) {
         hr = row;
         [prefs setInteger:row forKey:@"alarm_hr"];
@@ -128,7 +135,15 @@
         soundIndex = row;
         // Store the path instead of the index so that we can add new sounds
         // without breaking things.
-        [prefs setObject:[soundPaths objectAtIndex:row] forKey:@"alarm_sound"];
+        NSString *path = [soundPaths objectAtIndex:row];
+        [prefs setObject:path forKey:@"alarm_sound"];
+        //play the sound
+        NSString *soundPath = [[NSBundle mainBundle] pathForResource:path ofType:nil];
+        if (latestSound!=-1) {
+            AudioServicesDisposeSystemSoundID(latestSound);
+        }
+        AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath: soundPath], &latestSound);
+        AudioServicesPlaySystemSound (latestSound);
     }
     [self updateEarthLabel];
     [self updateAlarms];
