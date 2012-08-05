@@ -8,7 +8,6 @@
 #import "AppDelegate.h"
 #import "MarsTimeZone.h"
 
-#import <AudioToolbox/AudioToolbox.h>
 
 @implementation AppDelegate
 
@@ -55,20 +54,22 @@
      * to fake it.
      */
     if(application.applicationState == UIApplicationStateActive ) {
-        // FIXME: I think sound is a memory leak.
-        SystemSoundID sound;
         NSString *soundPath = [[NSBundle mainBundle]
                                pathForResource:notification.soundName ofType:nil];
-        AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath: soundPath], &sound);
-        AudioServicesPlaySystemSound (sound);
+        AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath: soundPath], &notifSound);
+        AudioServicesPlaySystemSound (notifSound);
         UIAlertView *alert = [[UIAlertView alloc]
                               initWithTitle: @"MarsTime"
                               message: notification.alertBody
-                              delegate: nil
+                              delegate: self
                               cancelButtonTitle:@"Close"
                               otherButtonTitles:nil];
         [alert show];
     }
+}
+
+- (void)alertView:(UIAlertView *)alertView willDismissWithButtonIndex:(NSInteger)buttonIndex {
+    AudioServicesDisposeSystemSoundID(notifSound);
 }
 
 - (MarsTimeZone*)currentTimeZone

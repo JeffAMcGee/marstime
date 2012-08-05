@@ -6,10 +6,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AudioToolbox/AudioToolbox.h>
 
 @class MarsTimeZone;
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, UIAlertViewDelegate> {
+    SystemSoundID notifSound;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 
