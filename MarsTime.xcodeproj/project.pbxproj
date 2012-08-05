@@ -42,6 +42,7 @@
 		1FFBBA8A15CDAC5000E68F03 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFBBA8915CDAC5000E68F03 /* AudioToolbox.framework */; };
 		1FFBBA9115CDCA5B00E68F03 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFBBA8F15CDCA5B00E68F03 /* launch.png */; };
 		1FFBBA9415CDDB5600E68F03 /* launch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFBBA9315CDDB5600E68F03 /* launch@2x.png */; };
+		1FFBBA9D15CEE4FB00E68F03 /* launch-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFBBA9C15CEE4FB00E68F03 /* launch-Portrait.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		1FFBBA8915CDAC5000E68F03 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		1FFBBA8F15CDCA5B00E68F03 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
 		1FFBBA9315CDDB5600E68F03 /* launch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch@2x.png"; sourceTree = "<group>"; };
+		1FFBBA9C15CEE4FB00E68F03 /* launch-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch-Portrait.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 		1F751C0C15695A0B0000E635 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1FFBBA9C15CEE4FB00E68F03 /* launch-Portrait.png */,
 				1FFBBA9315CDDB5600E68F03 /* launch@2x.png */,
 				1FFBBA8F15CDCA5B00E68F03 /* launch.png */,
 				1FFBBA7C15CD991E00E68F03 /* computers.m4a */,
@@ -316,6 +319,7 @@
 				1FFBBA8815CD9D3F00E68F03 /* pds_noise.m4a in Resources */,
 				1FFBBA9115CDCA5B00E68F03 /* launch.png in Resources */,
 				1FFBBA9415CDDB5600E68F03 /* launch@2x.png in Resources */,
+				1FFBBA9D15CEE4FB00E68F03 /* launch-Portrait.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
