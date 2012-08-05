@@ -132,7 +132,6 @@
 		1F751BF615695A0B0000E635 = {
 			isa = PBXGroup;
 			children = (
-				1FFBBA8915CDAC5000E68F03 /* AudioToolbox.framework */,
 				1F751C0B15695A0B0000E635 /* MarsTime */,
 				1F751C3715695A0B0000E635 /* MarsTimeTests */,
 				1F751C0415695A0B0000E635 /* Frameworks */,
@@ -152,6 +151,7 @@
 		1F751C0415695A0B0000E635 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1FFBBA8915CDAC5000E68F03 /* AudioToolbox.framework */,
 				1F751C0515695A0B0000E635 /* UIKit.framework */,
 				1F751C0715695A0B0000E635 /* Foundation.framework */,
 				1F751C0915695A0B0000E635 /* CoreGraphics.framework */,
