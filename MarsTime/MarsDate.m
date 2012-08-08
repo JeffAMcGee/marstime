@@ -8,6 +8,10 @@
 
 #import "MarsDate.h"
 
+const double SECS_PER_MARS_HR = 3698.9685;
+const double SECS_PER_MARS_MIN = 61.649475;
+const double SECS_PER_MARS_SEC = 1.02749125;
+
 @implementation MarsDate
 @synthesize sol,time,tz;
 
@@ -23,21 +27,22 @@
                   atHour:(int)hr andMin:(int)min {
     tz = theTZ;
     sol = theSol;
-    time = hr*3600.0+min*60.0;
+    time = hr*SECS_PER_MARS_HR+min*SECS_PER_MARS_MIN;
     return self;
 }
 
 
 - (int) hrs {
-    return floor(time/3600.0);
+    return floor(time/SECS_PER_MARS_HR);
 }
 
 - (int) mins {
-    double minutes = fmod(time, 3600.0);
-    return floor(minutes/60.0);
+    double minutes = fmod(time, SECS_PER_MARS_HR);
+    return floor(minutes/SECS_PER_MARS_MIN);
 }
 
-- (NSTimeInterval) secs {
-    return fmod(time,60);
+- (float) secs {
+    double earth_secs = fmod(time,SECS_PER_MARS_MIN);
+    return earth_secs/SECS_PER_MARS_SEC;
 }
 @end

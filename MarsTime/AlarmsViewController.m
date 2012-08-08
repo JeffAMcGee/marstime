@@ -89,7 +89,7 @@
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
     if(component==0) {
-        return 25;
+        return 24;
     } else if(component==1){
         return 60;
     } else {

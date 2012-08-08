@@ -7,6 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+
+extern const double SECS_PER_MARS_HR;
+extern const double SECS_PER_MARS_MIN;
+extern const double SECS_PER_MARS_SEC;
+
 @class MarsTimeZone;
 
 @interface MarsDate : NSObject
@@ -21,6 +26,6 @@
 
 - (int) hrs;
 - (int) mins;
-- (NSTimeInterval) secs;
+- (float) secs;
 
 @end

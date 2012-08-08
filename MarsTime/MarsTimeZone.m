@@ -42,7 +42,8 @@
 
 - (MarsDate *)nextMarsDateAtHour:(int)hr andMin:(int)min {
     MarsDate *now = [self marsDate:[NSDate date]];
-    int time = hr*3600+min*60;
+    // FIXME: this is a mess!
+    int time = hr*SECS_PER_MARS_HR+min*SECS_PER_MARS_MIN;
     int sol = now.sol;
     if(time<now.time) {
         sol++;
