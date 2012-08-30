@@ -53,6 +53,11 @@
     [self.timePicker selectRow:soundIndex inComponent:2 animated:NO];
     self.alarmSwitch.on = armed;
     [self.alarmSwitch addTarget:self action:@selector(switchFlipped:) forControlEvents:UIControlEventValueChanged];
+
+    self.timePicker.userInteractionEnabled = armed;
+    self.timePicker.alpha = self.earthAlarmLabel.alpha = armed?1:0;
+    self.timePicker.hidden = self.earthAlarmLabel.hidden = !armed;
+
     [self updateEarthLabel];
     [self updateAlarms];
 }
@@ -77,6 +82,10 @@
     [prefs setBool:armed forKey:@"alarm_armed"];
     [self updateEarthLabel];
     [self updateAlarms];
+
+    self.timePicker.userInteractionEnabled = armed;
+    [self toggleView:self.timePicker];
+    [self toggleView:self.earthAlarmLabel];
 }
 
 // Time Picker
@@ -158,16 +167,25 @@
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateStyle:NSDateFormatterShortStyle];
     [dateFormatter setTimeStyle:NSDateFormatterFullStyle];
-    NSString *intro;
-    if (armed) {
-        intro = @"The";
-    } else {
-        intro = @"If you turn it on, the";
-    }
     self.earthAlarmLabel.text = [NSString stringWithFormat:
-            @"%@ next time this alarm will go off will be %@.",
-            intro,
+            @"The next time this alarm will go off will be %@.",
             [dateFormatter stringFromDate:nextDate]];
+}
+
+- (void)toggleView:(UIView*)view {
+    if(armed) {
+        view.alpha = 0;
+        view.hidden = NO;
+        [UIView animateWithDuration:0.2 animations:^{
+            view.alpha = 1;
+        }];
+    } else {
+        [UIView animateWithDuration:0.2 animations:^{
+            view.alpha = 0;
+        } completion: ^(BOOL finished) {
+            view.hidden = YES;
+        }];
+    }
 }
 
 - (void)updateAlarms {
