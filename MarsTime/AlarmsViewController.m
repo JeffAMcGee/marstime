@@ -20,6 +20,7 @@
 @synthesize alarmSwitch;
 @synthesize timePicker;
 @synthesize earthAlarmLabel;
+@synthesize pickerLabel;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -55,8 +56,8 @@
     [self.alarmSwitch addTarget:self action:@selector(switchFlipped:) forControlEvents:UIControlEventValueChanged];
 
     self.timePicker.userInteractionEnabled = armed;
-    self.timePicker.alpha = self.earthAlarmLabel.alpha = armed?1:0;
-    self.timePicker.hidden = self.earthAlarmLabel.hidden = !armed;
+    self.timePicker.alpha = self.earthAlarmLabel.alpha = self.pickerLabel.alpha = armed;
+    self.timePicker.hidden = self.earthAlarmLabel.hidden = self.pickerLabel.hidden = !armed;
 
     [self updateEarthLabel];
     [self updateAlarms];
@@ -86,6 +87,7 @@
     self.timePicker.userInteractionEnabled = armed;
     [self toggleView:self.timePicker];
     [self toggleView:self.earthAlarmLabel];
+    [self toggleView:self.pickerLabel];
 }
 
 // Time Picker

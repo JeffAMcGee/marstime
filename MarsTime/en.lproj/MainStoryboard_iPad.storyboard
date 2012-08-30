@@ -117,6 +117,7 @@ Fork MarsTime on github: https://github.com/jeffamcgee/MarsTime</string>
                     <connections>
                         <outlet property="alarmSwitch" destination="b7O-wc-h6m" id="r0b-Zs-4u7"/>
                         <outlet property="earthAlarmLabel" destination="Zm6-KW-3IL" id="vse-gd-n5I"/>
+                        <outlet property="pickerLabel" destination="k3c-UJ-Z4c" id="Ml1-fw-ePJ"/>
                         <outlet property="timePicker" destination="uHr-ef-S3c" id="0PQ-bE-Jhb"/>
                     </connections>
                 </viewController>
@@ -147,24 +148,6 @@ Fork MarsTime on github: https://github.com/jeffamcgee/MarsTime</string>
         <image name="alarm_on.png" width="24" height="24"/>
         <image name="clock.png" width="24" height="24"/>
     </resources>
-    <classes>
-        <class className="AlarmsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AlarmsViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="alarmSwitch" candidateClass="UISwitch"/>
-                <relationship kind="outlet" name="earthAlarmLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="timePicker" candidateClass="UIPickerView"/>
-            </relationships>
-        </class>
-        <class className="ClockViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ClockViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="dateLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="timeLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="tzLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

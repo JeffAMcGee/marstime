@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UISwitch *alarmSwitch;
 @property (weak, nonatomic) IBOutlet UIPickerView *timePicker;
 @property (weak, nonatomic) IBOutlet UILabel *earthAlarmLabel;
+@property (weak, nonatomic) IBOutlet UILabel *pickerLabel;
 
 - (void)updateEarthLabel;
 - (void)toggleView:(UIView*)view;
